@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+    
+   <form id="form">
+
+    <label for="">
+
+       <p> Qual é seu nome? </p>
+        <input type="text" class="required" oninput="nameValidate()" placeholder="nome">
+        <span class="span-required">O nome deve ter no mínimo1 3 caracteres</span>
+
+    </label>
+
+   
+   <label for="">
+
+    <p>Seu e-mail</p>
+    <input type="email" name="" class="required" placeholder="email" oninput="emailValidate()">
+    <span class="span-required">E-mail invalido</span>
+
+   </label>
+  
+    <label for="">
+
+        <p>Digite uma senha</p>
+        <input type="password" name="" class="required" placeholder="senha" oninput="passwordValidate()">
+        <span class="span-required">Senha precisa de no mínimo1 8 caracteres</span>
+
+    </label>
+
+    <label for="">
+
+        <p>Reescreva sua senha</p>
+        <input type="password" name="" class="required" placeholder="confirmar senha" oninput="comparePassword()">
+        <span class="span-required">Senhas tevem ser compativa</span>
+
+    </label>
+   
+    <input type="submit" value="enviar">
+
+   </form>
+
+   </main>
+   <script src="script.js"></script>
+
+</body>
+</html>
